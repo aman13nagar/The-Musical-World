@@ -1,0 +1,84 @@
+#navbar{
+    flex-direction:column;
+}
+
+#navbar ul li a{
+    font-size:1rem;
+    padding:0px 7px;
+    padding-bottom: 8px;
+}
+#home{
+    height:370px;
+    padding:3px 28px;
+}
+#home::before{
+    height: 480px; 
+}
+
+#home p{
+    font-size: 25px;
+}
+
+/* Services section  */
+#services{
+    flex-direction: column;
+}
+
+#services .box1 { 
+    padding: 14px;
+    margin: 2px auto; 
+    margin-bottom: 20px;
+}
+#services .box2 { 
+    padding: 14px;
+    margin: 2px auto; 
+    margin-bottom: 20px;
+}
+#services .box3 { 
+    padding: 14px;
+    margin: 2px auto; 
+    margin-bottom: 20px;
+}
+#services .box1 img{
+   /* position: relative;*/
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+}
+#services .box2 img{
+    /*position: relative;*/
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+}
+#services .box3 img{
+   /* position: relative;*/
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+}
+#clients{
+    flex-wrap: wrap;
+}
+#clients img{
+    width: 66px;
+    padding: 6px;
+    height: 100px;
+    width:100px;
+}
+#contact-box form{
+    width:80%;
+}
+.h-primary{
+    font-size:41px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}

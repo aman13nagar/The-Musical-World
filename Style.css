@@ -1,0 +1,693 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#logo{
+    margin:10px 34px;
+}
+#logo img{
+    height:59px;
+    margin:3px 6px;
+    border-radius: 40px;
+}
+#navbar ul{
+    display:flex;
+    font-family:'Bree Serif', serif;
+}
+#navbar ul li{
+    list-style:none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display:flex;
+    flex-direction:column;
+    padding:3px 200px;
+    height:550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position:absolute;
+    background:url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+    height:642px;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:-1;
+    opacity: 0.89;
+}
+#home h1{
+    color:lightskyblue;
+    text-align: center;
+    font-family:'Bree Serif', serif;
+}
+#home p{
+    color:lightskyblue;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:'Bree Serif', serif;
+}
+#services{
+   /* background:url('C:\Users\user\Downloads\wV8EpIm-free-music-background-images.jpg');*/
+    margin:34px;
+    display:flex;
+}
+#services .box1{
+    /*border:2px solid brown;*/
+    padding:34px;
+    margin:2px auto;
+    width:70%;
+    border-radius:28px;
+    background:rgb(226 244 231);
+    margin-bottom: 20px;
+}
+#services .box1 .media-icons{
+   /* position:absolute;*/
+    height: 30px;
+   /* top:10px;*/
+    right:280px;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    cursor:pointer;
+}
+#services .box1 .media-icons i{
+    height:30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#services .box1 .media-icons i:hover{
+    opacity: 1;
+}
+#services .box1 .media-icons i a{
+    color:rgb(0, 8, 255);
+    transition: all 1s ease-out;
+    text-decoration: none;
+}
+#services .box1 .media-icons i a:hover{
+    color:aqua;
+}
+#services .box1 .media-icons1{
+    /*position:absolute;*/
+    height: 30px;
+    /*top:10px;*/
+    right:280px;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    cursor:pointer;
+}
+#services .box1 .media-icons1 i{
+    height:30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#services .box1 .media-icons1 i:hover{
+    opacity: 1;
+}
+#services .box1 .media-icons1 i a{
+    color:rgb(237, 63, 165);
+    transition: all 1s ease-out;
+    text-decoration: none;
+}
+#services .box1 .media-icons1 i a:hover{
+    color:coral;
+}
+#services .box1 .media-icons2{
+   /* position:absolute;*/
+    height: 30px;
+   /* top:10px;*/
+    right:280px;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    cursor:pointer;
+}
+#services .box1 .media-icons2 i{
+    height:30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#services .box1 .media-icons2 i:hover{
+    opacity: 1;
+}
+#services .box1 .media-icons2 i a{
+    color:rgb(106, 0, 255);
+    transition: all 1s ease-out;
+    text-decoration: none;
+}
+#services .box1 .media-icons2 i a:hover{
+    color:rgb(206, 127, 255);
+}
+#services .box2{
+    /*border:2px solid brown;*/
+    padding:34px;
+    margin:2px auto;
+    width:70%;
+    border-radius:28px;
+    background:#e8e5f6;
+    margin-bottom: 20px;
+}
+#services .box2 .media-icons-2{
+    /* position:absolute;*/
+     height: 30px;
+    /* top:10px;*/
+     right:280px;
+     display:flex;
+     flex-direction: row-reverse;
+     align-items: center;
+     cursor:pointer;
+ }
+ #services .box2 .media-icons-2 i{
+     height:30px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+ #services .box2 .media-icons-2 i:hover{
+     opacity: 1;
+ }
+ #services .box2 .media-icons-2 i a{
+    color:rgb(0, 8, 255);
+    transition: all 1s ease-out;
+    text-decoration: none;
+ }
+ #services .box2 .media-icons-2 i a:hover{
+    color:aqua;
+}
+ #services .box2 .media-icons1-2{
+     /*position:absolute;*/
+     height: 30px;
+     /*top:10px;*/
+     right:280px;
+     display:flex;
+     flex-direction: row-reverse;
+     align-items: center;
+     cursor:pointer;
+ }
+ #services .box2 .media-icons1-2 i{
+     height:30px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+ #services .box2 .media-icons1-2 i:hover{
+     opacity: 1;
+ }
+ #services .box2 .media-icons1-2 i a{
+    color:rgb(237, 63, 165);
+    transition: all 1s ease-out;
+    text-decoration: none;
+}
+ #services .box2 .media-icons1-2 i a:hover{
+    color:coral;
+}
+ #services .box2 .media-icons2-2{
+    /* position:absolute;*/
+     height: 30px;
+    /* top:10px;*/
+     right:280px;
+     display:flex;
+     flex-direction: row-reverse;
+     align-items: center;
+     cursor:pointer;
+ }
+ #services .box2 .media-icons2-2 i{
+     height:30px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+ #services .box2 .media-icons2-2 i:hover{
+     opacity: 1;
+ }
+ #services .box2 .media-icons2-2 i a{
+    color:rgb(0, 8, 255);
+    transition: all 1s ease-out;
+    text-decoration: none;
+ }
+ #services .box2 .media-icons2-2 i a:hover{
+    color:rgb(206, 127, 255);
+}
+#services .box3{
+    /*border:2px solid brown;*/
+    padding:34px;
+    margin:2px auto;
+    width:70%;
+    border-radius:28px;
+    background: #f1c7dc;
+    margin-bottom: 20px;
+}
+#services .box3 .media-icons-3{
+    /* position:absolute;*/
+     height: 30px;
+    /* top:10px;*/
+     right:280px;
+     display:flex;
+     flex-direction: row-reverse;
+     align-items: center;
+     cursor:pointer;
+ }
+ #services .box3 .media-icons-3 i{
+     height:30px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+ #services .box3 .media-icons-3 i:hover{
+     opacity: 1;
+ }
+ #services .box3 .media-icons-3 i a{
+    color:rgb(0, 8, 255);
+    transition: all 1s ease-out;
+    text-decoration: none;
+ }
+ #services .box3 .media-icons-3 i a:hover{
+    color:aqua;
+}
+ #services .box3 .media-icons1-3{
+     /*position:absolute;*/
+     height: 30px;
+     /*top:10px;*/
+     right:280px;
+     display:flex;
+     flex-direction: row-reverse;
+     align-items: center;
+     cursor:pointer;
+ }
+ #services .box3 .media-icons1-3 i{
+     height:30px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+ #services .box3 .media-icons1-3 i:hover{
+     opacity: 1;
+ }
+ #services .box3 .media-icons1-3 i a{
+    color:rgb(237, 63, 165);
+    transition: all 1s ease-out;
+    text-decoration: none;
+}
+ #services .box3 .media-icons1-3 i a:hover{
+    color:coral;
+}
+ #services .box3 .media-icons2-3{
+    /* position:absolute;*/
+     height: 30px;
+    /* top:10px;*/
+     right:280px;
+     display:flex;
+     flex-direction: row-reverse;
+     align-items: center;
+     cursor:pointer;
+ }
+ #services .box3 .media-icons2-3 i{
+     height:30px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+ #services .box3 .media-icons2-3 i:hover{
+     opacity: 1;
+ }
+ #services .box3 .media-icons2-3 i a{
+    color:rgb(0, 8, 255);
+    transition: all 1s ease-out;
+    text-decoration: none;
+ }
+ #services .box3 .media-icons2-3 i a:hover{
+    color:rgb(206, 127, 255);
+}
+#services .box1 img{
+    border-radius:300px;
+    height:300px;
+    width:30%;
+    margin:auto;
+    display:block;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+#services .box1 img:hover{
+    opacity:1;
+}
+#services .box2 img{
+    border-radius:300px;
+    height:300px;
+    width:30%;
+    margin:auto;
+    display:block;
+}
+#services .box3 img{
+    border-radius:300px;
+    height:300px;
+    width:30%;
+    margin:auto;
+    display:block;
+}
+#services .box1 h2{
+    text-align:center;
+    color:rgb(12, 12, 12);
+}
+#services .box2 h2{
+    text-align:center;
+    color:rgb(12, 12, 12);
+}
+#services .box3 h2{
+    text-align:center;
+    color:rgb(12, 12, 12);
+}
+#services .box1 p{
+    font-family:'Bree Serif', serif;
+}
+#services .box2 p{
+    font-family:'Bree Serif', serif;
+}
+#services .box3 p{
+    font-family:'Bree Serif', serif;
+}
+#client-section{
+    position:relative;
+}
+#client-section::before{
+    content: "";
+    position:absolute;
+    background:url('https://i.ytimg.com/vi/ss7EJ-PW2Uk/maxresdefault.jpg') no-repeat center center/cover;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.3;
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding:34px;
+}
+#clients img{
+    height:124px;
+    width:124px;
+    display:block;
+    border-radius:50%;
+}
+#contact{
+    position:relative;
+}
+#contact::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.7;
+    background:url('https://st.depositphotos.com/1571889/1466/i/600/depositphotos_14661631-stock-photo-detail-of-guitar.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:34px
+}
+#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size:1.1rem;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-bax label{
+    font-size:1.3rem;
+    font-family:'Bree Serif', serif;
+}
+footer{
+    background:black;
+    color:white;
+    padding:9px 20px;
+}
+.h-primary{
+    font-family:'Bree Serif', serif;
+    font-size:3.8rem;
+    padding:12px;
+}
+.h-secondary{
+    font-family:'Bree Serif', serif;
+    font-size:2.3rem;
+    padding:12px;
+}
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color:rgb(102, 255, 102);
+    color:white;
+    margin:17px;
+    font-size:1.5rem;
+    font-weight: bold;
+    border-radius:10px;
+    cursor:pointer;
+    transition: all 1s ease-out;
+}
+.btn:hover{
+    background-color:aquamarine;
+}
+.btn a{
+    color:brown;
+    transition: all 1s ease-out;
+    text-decoration: none;
+}
+.btn a:hover{
+    color:white;
+}
+.center{
+    text-align:center;
+}
+.btn1{
+    padding:6px 20px;
+    background-color: black;
+    color:white;
+    display:block;
+    justify-items: center;
+    margin:17px auto;
+    font-size:1.3rem;
+    border-radius:10px;
+    cursor:pointer;
+    transition: all 1s ease;
+}
+.btn1:hover{
+    background-color:rgb(27, 20, 20)
+}
+
+.btn2{
+    padding:6px 20px;
+    background-color: black;
+    color:white;
+    display:block;
+    justify-items: center;
+    margin:17px auto;
+    font-size:1.3rem;
+    border-radius:10px;
+    cursor:pointer;
+    transition: all 1s ease;
+}
+.btn2:hover{
+    background-color:rgb(27, 20, 20)
+}
+.btn2 a{
+    color:white;
+    text-decoration: none;
+    font-size:1.3rem;
+}
+#contact1{
+    position:relative;
+}
+#contact1::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.7;
+   /* background:url('https://st.depositphotos.com/1571889/1466/i/600/depositphotos_14661631-stock-photo-detail-of-guitar.jpg') no-repeat center center/cover;*/
+   /* background:url('wes-hicks-MEL-jJnm7RQ-unsplash.png') no-repeat center center/cover;*/
+    background:url('https://images.unsplash.com/photo-1487611459768-bd414656ea10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGNvbnRhY3R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60') no-repeat center center/cover;
+}
+
+#contact-box1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:34px;
+}
+.photo{
+    padding:34px;
+}
+#contact-box1 img{
+    height:124px;
+    width:124px;
+    border-radius:50%;
+}
+#contact1 .social-media{
+    /* position:absolute;*/
+     height: 30px;
+     top:10px;
+     right:280px;
+     display:flex;
+     flex-direction: row-reverse;
+     align-items: center;
+     cursor:pointer;
+ }
+#contact1 .social-media i{
+     height:150px;
+     width:100px;
+    /* filter:invert();*/
+     cursor: pointer;
+     transition: all 2s ease;
+ }
+#contact1 .social-media i:hover{
+     opacity: 1;
+ }
+#contact1 .social-media i a{
+     color:rgb(0, 8, 255);
+     transition: all 1s ease-out;
+     text-decoration: none;
+}
+#contact1 .social-media i a:hover{
+    color:aqua;
+}
+#contact1 .social-media1{
+    /* position:absolute;*/
+     color:black;
+     height: 30px;
+     top:10px;
+     right:280px;
+     display:flex;
+     flex-direction: row-reverse;
+     align-items: center;
+     cursor:pointer;
+ }
+#contact1 .social-media1 i{
+     height:210px;
+     width:50px;
+     /*filter: invert();*/
+     cursor: pointer;
+     margin:20px;
+     transition: all 0.3s ease;
+ }
+#contact1 .social-media1 i:hover{
+     opacity: 1;
+ }
+#contact1 .social-media1 i a{
+     color:rgb(237, 63, 165);
+     transition: all 1s ease-out;
+     text-decoration: none;
+}
+#contact1 .social-media1 i a:hover{
+    color:coral;
+}
+#contact1 .social-media2{
+    /*position:absolute;*/
+    height: 30px;
+    top:10px;
+    right:280px;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    cursor:pointer;
+}
+#contact1 .social-media2 i{
+    height:270px;
+    width:40px;
+   /* filter:invert();*/
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#contact1 .social-media2 i:hover{
+    opacity: 1;
+}
+#contact1 .social-media2 i a{
+    color:rgb(0, 8, 255);
+    transition: all 1s ease-out;
+    text-decoration: none;
+}
+#contact1 .social-media2 i a:hover{
+   color:rgb(206, 127, 255);
+}
+.h-secondary1{
+    font-family:'Bree Serif', serif;
+    font-size:2.3rem;
+    padding:12px;
+}
+#contact-box1 .E-mail .Information .social-media4{
+    /*position:absolute;*/
+    height: 30px;
+    top:10px;
+    right:280px;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    cursor:pointer;
+}
+#contact-box1 h3 .Information .social-media3 i{
+    height:30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#contact-box1 h3 .Information .social-media3 i:hover{
+    opacity: 1;
+}
+#contact-box1 h3 .Information .social-media3 i a:hover{
+   color:black;
+}
+#contact-box1 h3 .Information .social-media4 i{
+    height:30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#contact-box1 h3 .Information .social-media4 i:hover{
+    opacity: 1;
+}
+#contact-box1 h3 .Information .social-media4 i a{
+    text-decoration: none;
+}
+#contact-box1 h3 .Information .social-media4 i a:hover{
+   color:black;
+}
+#contact-box1 .mobile{
+    color:rgb(12, 12, 12);
+}
+#contact-box1 .E-mail{
+    color:rgb(12, 12, 12);
+}
